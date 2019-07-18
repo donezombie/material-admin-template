@@ -1,11 +1,15 @@
 ## Start
 
-- git clone https://github.com/donezombie/boiderplateReactReduxThunk
-- cd boiderplateReactReduxThunk
+- git clone https://github.com/donezombie/material-admin-template.git
+- cd material-admin-template
 - npm i
 - rm -rf .git
 
 And feeling it :">
+Some notice:
+  - config url api in /Consts/urls.js
+  - config baseURL axios in /Ultis/index.js
+  - add/config route in /Ultis/panels.js
 
 ## Dependencies package:
   - "@material-ui/core"
@@ -27,3 +31,5 @@ And feeling it :">
   - "redux"
   - "redux-promise"
   - "redux-thunk"
+  - "formik"
+  - "yup"
