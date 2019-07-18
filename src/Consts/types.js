@@ -1,0 +1,11 @@
+const USER_LOGIN = 'USER_LOGIN';
+const USER_LOGOUT = 'USER_LOGOUT';
+const USER_ERROR = 'USER_ERROR';
+const USER_LOADING = 'USER_LOADING';
+
+export default {
+  USER_LOGIN,
+  USER_LOGOUT,
+  USER_ERROR,
+  USER_LOADING,
+};
