@@ -6,6 +6,7 @@ import { Input, Store, RadioButtonUnchecked } from '@material-ui/icons';
 import { connect } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Roles from './Consts/role';
 import { ProtectRoute, Authorization } from './Authentication';
 import panels from './Ultis/panels';
 import Login from './View/Login';
@@ -53,6 +54,7 @@ const styleDrawer = {
 
 const Main = (props) => {
   const { userReducer, userLogout } = props;
+  const { ACCOUNTANT, SALE, MANAGER } = Roles;
   let isLogin;
   // Logic condition to Login
   if (_.isEmpty(userReducer)) {
@@ -61,7 +63,7 @@ const Main = (props) => {
     isLogin = true;
   }
   const permissionUser = ['QL', 'TN', 'KT'];
-  const SaleWithAuthorization = Authorization(Sale, ['TN', 'KT', 'QL'], permissionUser);
+  const SaleWithAuthorization = Authorization(Sale, [ACCOUNTANT, SALE, MANAGER], permissionUser);
 
   return (
     <div className="App">
