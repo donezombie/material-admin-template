@@ -4,6 +4,7 @@
 - cd material-admin-template
 - npm i
 - rm -rf .git
+- npm start
 
 And feeling it :">
 Some notice:
